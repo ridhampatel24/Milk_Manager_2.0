@@ -12,5 +12,13 @@
     <string name="adminno">8320255090</string>
     <string name="navigation_open">Open Navigation Drawer</string>
     <string name="navigation_close">Close Navigation Drawer</string>
+    <string name="logout">Logout</string>
+    <string name="language">Language</string>
 
+    <array name="customer_names">
+        <item>John</item>
+        <item>Jane</item>
+        <item>Travis</item>
+        <item>Kris</item>
+    </array>
 </resources>
