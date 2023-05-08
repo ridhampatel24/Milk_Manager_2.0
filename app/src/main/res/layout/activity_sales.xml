@@ -76,7 +76,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:paddingTop="37dp"
-                    android:text="23 Litre"
+                    android:text="@string/_23_litre"
                     android:textStyle="bold"
                     android:textSize="20dp"
 
@@ -109,7 +109,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:paddingTop="37dp"
-                    android:text="23 Litre"
+                    android:text="@string/_23_litre_"
                     android:textStyle="bold"
                     android:textSize="20dp"
                     />
@@ -142,7 +142,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:paddingTop="25dp"
-                    android:text="Total Milk\n 46 Litre"
+                    android:text="@string/total_milk_n_46_litre"
                     android:textStyle="bold"
                     android:textSize="20dp"
                     />
@@ -168,7 +168,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:paddingTop="25dp"
-                    android:text="Total Amount $4500 "
+                    android:text="@string/total_amount_4500"
                     android:textStyle="bold"
                     android:textSize="20dp"
                     />
@@ -194,7 +194,7 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Amount Received"
+        android:text="@string/amount_received"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="30dp"
         android:textSize="30dp"
@@ -228,7 +228,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:paddingTop="10dp"
-                    android:text="Online $5000"
+                    android:text="@string/online_5000"
                     android:textStyle="bold"
                     android:textSize="27dp"
                     />
@@ -255,7 +255,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:paddingTop="15dp"
-                    android:text="Cash $3200"
+                    android:text="@string/cash_3200"
                     android:textStyle="bold"
                     android:textSize="29dp"
                     />

@@ -31,7 +31,7 @@
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
                 android:textColor="@color/colortextfirst"
-                android:text="Dhaval Varia"
+                android:text="@string/dhaval_varia"
                 android:background="@drawable/savebtn"
                  />
 
@@ -47,7 +47,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textColor="@color/colortextfirst"
-                    android:text="Vacation Mode"
+                    android:text="@string/vacation_mode"
                     android:padding="5dp" />
 
                 <androidx.appcompat.widget.SwitchCompat
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content">
                 <TableRow>
                     <TextView
-                        android:text="Slot"
+                        android:text="@string/slot"
                         android:padding="3dip"
                         android:textColor="@color/colortext"
                         android:textStyle="bold"/>
@@ -163,7 +163,7 @@
                 </TableRow>
                 <TableRow>
                     <TextView
-                        android:text="Evening"
+                        android:text="@string/evening"
                         android:padding="3dip"
                         android:textColor="@color/colortext"
                         android:textStyle="bold"/>
@@ -206,7 +206,7 @@
                     android:id="@+id/report"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
-                    android:text="Report"
+                    android:text="@string/report"
                     android:layout_margin="10dp"
                     android:background="@drawable/backbutton"
                     android:textColor="@color/colortextfirst"
@@ -217,7 +217,7 @@
                     android:id="@+id/payment"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
-                    android:text="Payment"
+                    android:text="@string/payment"
                     android:layout_margin="10dp"
                     android:background="@drawable/backbutton"
                     android:textColor="@color/colortextfirst"
@@ -229,7 +229,7 @@
                     android:id="@+id/save"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
-                    android:text="Save"
+                    android:text="@string/save"
                     android:layout_margin="10dp"
                     android:background="@drawable/backbutton"
                     android:textColor="@color/colortextfirst"

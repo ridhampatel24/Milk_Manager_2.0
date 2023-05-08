@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Service"
+        android:text="@string/service"
         android:textStyle="bold"
         android:textSize="40dp"
         android:paddingTop="20dp"
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:hint="Enter Services Name"
+        android:hint="@string/enter_services_name"
         android:padding="20dp"
         app:backgroundTint="#FFC703"
         >
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:background="@drawable/backbutton"
-        android:text="Add"
+        android:text="@string/add"
         android:textColor="@color/colortextfirst"
         android:textStyle="bold"
 

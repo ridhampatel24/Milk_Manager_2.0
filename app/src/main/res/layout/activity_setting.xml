@@ -10,6 +10,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@drawable/backgroundbox"
+    android:layout_margin="10dp"
     >
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,7 +28,7 @@
             android:layout_margin="30dp"
             android:layout_weight="1"
             android:background="@drawable/backbutton"
-            android:text="\nAdd \n Services"
+            android:text="@string/nadd_n_services"
             android:textColor="@color/colortextfirst"
             android:textStyle="bold"
             android:drawableTop="@drawable/add_services"
@@ -50,7 +51,7 @@
             android:drawablePadding="-4dp"
             android:paddingLeft="8px"
             android:paddingRight="8px"
-            android:text="Card \n Generate"
+            android:text="@string/card_generate"
             android:textColor="@color/colortextfirst"
             android:textSize="20sp"
             android:textStyle="bold">
@@ -63,7 +64,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center|center_horizontal"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonLanguage"
@@ -72,7 +75,7 @@
             android:layout_margin="30dp"
             android:layout_weight="1"
             android:background="@drawable/backbutton"
-            android:text="Language"
+            android:text="@string/language"
             android:textColor="@color/colortextfirst"
             android:textStyle="bold"
             android:drawableTop="@drawable/language"
@@ -90,14 +93,15 @@
             android:layout_margin="30dp"
             android:layout_weight="1"
             android:background="@drawable/backbutton"
-            android:text="logout"
+            android:text="@string/logout"
             android:textColor="@color/colortextfirst"
             android:textStyle="bold"
             android:drawableTop="@drawable/logout"
             android:drawablePadding="12dp"
-            android:paddingLeft="8px"
+            android:paddingLeft="10dp"
             android:paddingRight="8px"
-            android:textSize="20sp"
+            android:paddingTop="22dp"
+            android:textSize="20dp"
             >
 
         </androidx.appcompat.widget.AppCompatButton>

@@ -64,7 +64,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Your Customer ID: "
+                    android:text="@string/your_customer_id"
                     android:textColor="@color/colortextfirst"
                     android:textSize="20dp"/>
 
@@ -80,7 +80,7 @@
                     android:textColor="@color/colortextfirst"
                     android:textSize="20dp"
                     android:textStyle="bold"
-                    android:text="1" />
+                    android:text="@string/_1" />
 
             </LinearLayout>
 
@@ -97,7 +97,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="This month total: "
+                    android:text="@string/this_month_total"
                     android:textColor="@color/colortextfirst"
                     android:textSize="20dp"/>
 
@@ -106,7 +106,7 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    android:text="Rs 2000"
+                    android:text="@string/rs_2000"
                     android:background="@drawable/savebtn"
                     android:textColor="@color/colortextfirst"
                     android:textSize="20dp"/>
@@ -131,7 +131,7 @@
                     android:textColor="@color/colortextfirst"
                     android:textSize="20dp"
                     android:layout_gravity="center_horizontal"
-                    android:text="ADD A NEW MILK PROVIDER"/>
+                    android:text="@string/add_a_new_milk_provider"/>
 
 
                 <LinearLayout
@@ -149,7 +149,7 @@
                         android:id="@+id/number"
                         android:layout_width="160dp"
                         android:layout_height="wrap_content"
-                        android:text="Select Number ->"
+                        android:text="@string/select_number_"
                         android:textColor="@color/colortextfirst"
                         android:background="@drawable/savebtn"
                         android:textSize="15dp"
@@ -160,7 +160,7 @@
                         android:id="@+id/getnumber"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Select Number" />
+                        android:text="@string/select_number" />
 
                 </LinearLayout>
 
@@ -168,7 +168,7 @@
                     android:id="@+id/buttonverifyopt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Add"
+                    android:text="@string/add"
                     android:layout_margin="10dp"
                     android:background="@drawable/backbutton"
                     android:textColor="@color/colortextfirst"
@@ -195,10 +195,5 @@
         </LinearLayout>
 
     </ScrollView>
-
-
-
-
-
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Register"
+            android:text="@string/register"
             android:textSize="30sp"
             android:textColor="@color/colortextfirst"
             android:textStyle="bold" />
@@ -50,7 +50,7 @@
             android:gravity="center"
             android:textColor="@color/colortextsecond"
             android:textSize="14sp"
-            android:text="Please enter the below Details" />
+            android:text="@string/please_enter_the_below_details_" />
 
     <LinearLayout
         android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
         android:paddingBottom="10dp"
         >
         <com.google.android.material.textfield.TextInputLayout
-            android:hint="Full Name"
+            android:hint="@string/full_name"
             android:layout_height="wrap_content"
             app:boxStrokeColor="@color/colorPrimary"
             app:hintTextColor="@color/colortextfirst"
@@ -91,7 +91,7 @@
             android:paddingBottom="10dp"
             >
             <com.google.android.material.textfield.TextInputLayout
-                android:hint="Area"
+                android:hint="@string/area"
                 android:layout_height="wrap_content"
                 app:boxStrokeColor="@color/colorPrimary"
                 app:hintTextColor="@color/colortextfirst"
@@ -117,7 +117,7 @@
             android:paddingRight="10dp"
             android:paddingBottom="10dp">
             <com.google.android.material.textfield.TextInputLayout
-                android:hint="Address"
+                android:hint="@string/address"
                 android:layout_height="wrap_content"
                 app:boxStrokeColor="@color/colorPrimary"
                 app:hintTextColor="@color/colortextfirst"
@@ -142,7 +142,7 @@
             android:paddingRight="10dp"
             android:paddingBottom="10dp">
             <com.google.android.material.textfield.TextInputLayout
-                android:hint="PinCode"
+                android:hint="@string/pincode"
                 android:layout_height="wrap_content"
                 app:boxStrokeColor="@color/colorPrimary"
                 app:hintTextColor="@color/colortextfirst"
@@ -166,7 +166,7 @@
             android:id="@+id/btnregister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Save"
+            android:text="@string/save_"
             android:layout_margin="30dp"
             android:background="@drawable/savebtn"
             android:textColor="@color/colortextsecond"
