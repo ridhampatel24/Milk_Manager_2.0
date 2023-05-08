@@ -12,13 +12,54 @@
     <string name="adminno">8320255090</string>
     <string name="navigation_open">Open Navigation Drawer</string>
     <string name="navigation_close">Close Navigation Drawer</string>
-    <string name="logout">Logout</string>
+    <string name="nadd_n_services">\nAdd \n Services</string>
+    <string name="card_generate">Card Generate</string>
     <string name="language">Language</string>
+    <string name="logout">logout</string>
+    <string name="your_customer_id">Your Customer ID:</string>
+    <string name="_1">1</string>
+    <string name="this_month_total">This month total:</string>
+    <string name="rs_2000">Rs 2000</string>
+    <string name="add_a_new_milk_provider">ADD A NEW MILK PROVIDER</string>
+    <string name="select_number">Select Number</string>
+    <string name="add">Add</string>
+    <string name="select_number_"><![CDATA[Select Number ->]]></string>
+    <string name="_91">+91</string>
+    <string name="this_month_total_">This month total:</string>
+    <string name="more">More</string>
+    <string name="report">Report</string>
+    <string name="payment">payment</string>
+    <string name="settings">settings</string>
+    <string name="sales">sales</string>
+    <string name="profile">Profile</string>
+    <string name="please_enter_the_below_details">Please enter the below Details</string>
+    <string name="save">Save</string>
+    <string name="register">Register</string>
+    <string name="please_enter_the_below_details_">Please enter the below Details</string>
+    <string name="address">Address</string>
+    <string name="area">Area</string>
+    <string name="full_name">Full Name</string>
+    <string name="pincode">PinCode</string>
+    <string name="save_">Save</string>
+    <string name="_23_litre">23 Litre</string>
+    <string name="_23_litre_">23 Litre</string>
+    <string name="total_milk_n_46_litre">Total Milk\n 46 Litre</string>
+    <string name="total_amount_4500">Total Amount $4500</string>
+    <string name="amount_received">Amount Received</string>
+    <string name="online_5000">Online $5000</string>
+    <string name="cash_3200">Cash $3200</string>
+    <string name="language_">language</string>
+    <string name="add_">Add</string>
+    <string name="service">Service</string>
+    <string name="enter_services_name">Enter Services Name</string>
+    <string name="add__">Add</string>
+    <string name="welcome_to_the_cow_app">Welcome to the Cow App</string>
+    <string name="dhaval_varia">Dhaval Varia</string>
+    <string name="vacation_mode">Vacation Mode</string>
+    <string name="slot">Slot</string>
+    <string name="evening">Evening</string>
+    <string name="report_">Report</string>
+    <string name="payment_">Payment</string>
+    <string name="save__">Save</string>
 
-    <array name="customer_names">
-        <item>John</item>
-        <item>Jane</item>
-        <item>Travis</item>
-        <item>Kris</item>
-    </array>
 </resources>

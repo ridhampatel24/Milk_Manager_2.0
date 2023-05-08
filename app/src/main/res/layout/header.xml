@@ -24,7 +24,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to the Cow App"
+        android:text="@string/welcome_to_the_cow_app"
         android:textColor="@color/colortextsecond"
         android:textSize="20sp" />
 
