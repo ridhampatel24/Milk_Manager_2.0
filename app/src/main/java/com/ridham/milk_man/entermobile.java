@@ -30,7 +30,7 @@ public class entermobile extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_entermobilenumber);
 
-        Intent intent = new Intent(getApplicationContext(),dashboardm.class);
+        Intent intent = new Intent(getApplicationContext(),more.class);
         startActivity(intent);
         SharedPreferences getShared = getSharedPreferences("user",MODE_PRIVATE);
         String  user_type = getShared.getString("user_type","0");

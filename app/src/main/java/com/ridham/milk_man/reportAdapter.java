@@ -12,11 +12,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class recyclerAdapter extends RecyclerView.Adapter<reportAdapter.MyViewHolder> {
+public class reportAdapter extends RecyclerView.Adapter<reportAdapter.MyViewHolder> {
 
     Context context;
     ArrayList<dataModel> customers;
-    public recyclerAdapter(Context context, ArrayList<dataModel> customers){
+    public reportAdapter(Context context, ArrayList<dataModel> customers){
         this.context=context;
         this.customers=customers;
     }
@@ -24,7 +24,7 @@ public class recyclerAdapter extends RecyclerView.Adapter<reportAdapter.MyViewHo
     @Override
     public reportAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.customer_details,parent,false);
+        View view = inflater.inflate(R.layout.report,parent,false);
         return new reportAdapter.MyViewHolder(view);
     }
 

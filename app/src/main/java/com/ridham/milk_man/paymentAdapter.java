@@ -11,25 +11,26 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class recyclerAdapter extends RecyclerView.Adapter<reportAdapter.MyViewHolder> {
+public class paymentAdapter extends RecyclerView.Adapter<paymentAdapter.MyViewHolder> {
 
     Context context;
     ArrayList<dataModel> customers;
-    public recyclerAdapter(Context context, ArrayList<dataModel> customers){
+    public paymentAdapter(Context context, ArrayList<dataModel> customers){
         this.context=context;
         this.customers=customers;
     }
     @NonNull
     @Override
-    public reportAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public paymentAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.customer_details,parent,false);
-        return new reportAdapter.MyViewHolder(view);
+        View view = inflater.inflate(R.layout.payment,parent,false);
+        return new paymentAdapter.MyViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull reportAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull paymentAdapter.MyViewHolder holder, int position) {
         holder.customerName.setText(customers.get(position).getName());
     }
 

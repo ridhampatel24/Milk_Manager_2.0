@@ -23,10 +23,25 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".reportList"
+            android:exported="false" />
+        <activity
+            android:name=".paymentList"
+            android:exported="false" />
+        <activity
+            android:name=".more"
+            android:exported="false" />
+        <activity
             android:name=".dashboardm"
             android:exported="false" />
         <activity
             android:name=".profilec"
+            android:exported="false" />
+        <activity
+            android:name=".setting"
+            android:exported="false" />
+        <activity
+            android:name=".sales"
             android:exported="false" />
         <activity
             android:name=".milkmanDashboard"

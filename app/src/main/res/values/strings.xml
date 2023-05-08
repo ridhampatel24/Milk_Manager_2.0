@@ -61,5 +61,10 @@
     <string name="report_">Report</string>
     <string name="payment_">Payment</string>
     <string name="save__">Save</string>
-
+    <array name="customer_names">
+        <item>John</item>
+        <item>Jane</item>
+        <item>Travis</item>
+        <item>Kris</item>
+    </array>
 </resources>

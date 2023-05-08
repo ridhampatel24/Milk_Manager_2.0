@@ -10,27 +10,15 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class dashboardm extends AppCompatActivity {
-
+public class reportList extends AppCompatActivity {
     ArrayList<dataModel> customers = new ArrayList<>();
     SearchView searchView;
     reportAdapter adapter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboardm);
-        searchView = findViewById(R.id.searchView);
-
-//        searchView.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener() {
-//            @Override
-//            public void onFocusChange(View v, boolean hasFocus) {
-//                if (hasFocus) {
-//                    showInputMethod(v.findFocus());
-////
-//                }
-//            }
-//        });
+        setContentView(R.layout.activity_report_list);
+        searchView = findViewById(R.id.searchviewreport);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -49,7 +37,6 @@ public class dashboardm extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
-
     private void setUpCustomer(){
         String[] names = getResources().getStringArray(R.array.customer_names);
         for(int i=0;i<names.length;i++){
@@ -71,10 +58,4 @@ public class dashboardm extends AppCompatActivity {
             }
         }
     }
-//    private void showInputMethod(View view) {
-//        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-//        if (imm != null) {
-//            imm.showSoftInput(view, 0);
-//        }
-//    }
 }
