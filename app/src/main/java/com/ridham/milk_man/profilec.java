@@ -62,6 +62,8 @@ public class profilec extends AppCompatActivity implements NavigationView.OnNavi
         customer_name = getShared.getString("customer_name","Ridham");
         customer_pincode = getShared.getString("customer_pincode","123456");
         customer_address = getShared.getString("customer_address","123456");
+
+
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
@@ -69,6 +71,10 @@ public class profilec extends AppCompatActivity implements NavigationView.OnNavi
         editText1 = findViewById(R.id.full_name1);
         areaText1 = findViewById(R.id.area1);
         addressText1 = findViewById(R.id.address1);
+
+        editText1.getEditText().setText(customer_name);
+        areaText1.getEditText().setText(customer_pincode);
+        addressText1.getEditText().setText(customer_address);
 
 
 //        String name1 = editText1.getEditText().getText().toString().trim();

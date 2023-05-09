@@ -81,7 +81,7 @@ public class registeruser extends AppCompatActivity {
                             if(!pincode.isEmpty()){
                                 AlertDialog.Builder builder = new AlertDialog.Builder(registeruser.this);
                                 builder.setTitle("Register User");
-                                builder.setMessage("Please Confirm your Details? /n Name: "+name+"/n Area: "+area+"/n Address: "+address+"/n Pincode: "+pincode);
+                                builder.setMessage("Please Confirm your Details? \nName: "+name+" \nArea: "+area+"\nAddress: "+address+"\nPincode: "+pincode);
                                 builder.setPositiveButton("OK", (dialogInterface, i) -> {
                                     postDataUsingVolley(name, mobile, address, pincode);
                                     Intent intent = new Intent(getApplicationContext(), dashboardc.class);
@@ -172,3 +172,5 @@ public class registeruser extends AppCompatActivity {
         queue.add(request);
     }
 }
+
+

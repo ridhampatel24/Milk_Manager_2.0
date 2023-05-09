@@ -269,7 +269,7 @@ public class verifyotp extends AppCompatActivity {
                     SharedPreferences.Editor editor = shrd.edit();
                     if(usertype.equals("0")){
                         //Selector Page
-                        editor.putInt("user_type",0);
+                        editor.putString("user_type","0");
                         editor.putString("user_phone_number",getIntent().getStringExtra("mobile"));
                         editor.apply();
                         Toast.makeText(verifyotp.this, "User does not exist", Toast.LENGTH_SHORT).show();
@@ -337,8 +337,8 @@ public class verifyotp extends AppCompatActivity {
                 // storing our values in key and value pair.
                 Map<String, String> params = new HashMap<String, String>();
 
-                //params.put("phone_number", mobile);
-                params.put("phone_number", "873643444");
+                params.put("phone_number", mobile);
+                //params.put("phone_number", "873643444");
                 // at last we are
                 // returning our params.
                 return params;
