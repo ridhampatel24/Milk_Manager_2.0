@@ -1,26 +1,55 @@
 package com.ridham.milk_man;
 
+import android.annotation.SuppressLint;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
+import androidx.navigation.ui.AppBarConfiguration;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.SearchView;
 import android.widget.Toast;
 
+import com.google.android.material.navigation.NavigationView;
+
 import java.util.ArrayList;
 
-public class dashboardm extends AppCompatActivity {
+public class dashboardm extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     ArrayList<dataModel> customers = new ArrayList<>();
     SearchView searchView;
+    DrawerLayout drawerLayout;
     reportAdapter adapter;
-
+    Toolbar toolbar;
+    NavigationView navigationView;
+    SharedPreferences sharedPreferences;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboardm);
         searchView = findViewById(R.id.searchView);
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.nav_view);
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        navigationView.bringToFront();
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_open,R.string.navigation_close);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+        navigationView.setNavigationItemSelectedListener(this);
+
+        navigationView.setCheckedItem(R.id.home);
+
 
 //        searchView.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener() {
 //            @Override
@@ -77,4 +106,70 @@ public class dashboardm extends AppCompatActivity {
 //            imm.showSoftInput(view, 0);
 //        }
 //    }
+//@Override
+public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+    if(item.getItemId() == R.id.profile){
+        Toast.makeText(this, "Profile", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(dashboardm.this,profilem.class);
+        startActivity(intent);
+        drawerLayout.closeDrawer(GravityCompat.START);
+    }
+    if(item.getItemId() == R.id.setting){
+        Toast.makeText(this, "Setting", Toast.LENGTH_SHORT).show();
+        drawerLayout.closeDrawer(GravityCompat.START);
+    }
+    if(item.getItemId() == R.id.logout){
+        AlertDialog.Builder builder = new AlertDialog.Builder(dashboardm.this);
+        builder.setTitle("Logout");
+        builder.setMessage("Are you sure you want to logout?");
+        builder.setPositiveButton("Yes", (dialogInterface, i) -> {
+            Toast.makeText(this, "LogOut Succes", Toast.LENGTH_SHORT).show();
+//            SharedPreferences sharedPreferences;
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.clear();
+            editor.apply();
+            Intent intent = new Intent(dashboardm.this,entermobile.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+            finish();
+        });
+        builder.setNegativeButton("No", (dialogInterface, i) -> {
+            Toast.makeText(this, "LogOut Cancel", Toast.LENGTH_SHORT).show();
+        });
+        builder.show();
+        //Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
+        drawerLayout.closeDrawer(GravityCompat.START);
+
+    }
+    if(item.getItemId() == R.id.sales){
+        Toast.makeText(this, "Profile", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(dashboardm.this,sales.class);
+        startActivity(intent);
+        drawerLayout.closeDrawer(GravityCompat.START);
+    }
+//    if(item.getItemId() == R.id.sales){
+//        Toast.makeText(this, "Sales", Toast.LENGTH_SHORT).show();
+//        Intent intent = new Intent(dashboardm.this,sales.class);
+//        startActivity(intent);
+//        drawerLayout.closeDrawer(GravityCompat.START);
+//    }
+    if(item.getItemId() == R.id.payment){
+        Toast.makeText(this, "Payment", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(dashboardm.this,paymentList.class);
+        startActivity(intent);
+        drawerLayout.closeDrawer(GravityCompat.START);
+    }
+    if(item.getItemId() == R.id.report){
+        Toast.makeText(this, "Profile", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(dashboardm.this, reportList.class);
+        startActivity(intent);
+        drawerLayout.closeDrawer(GravityCompat.START);
+    }
+    return true;
+}
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+        super.onPointerCaptureChanged(hasCapture);
+    }
 }
